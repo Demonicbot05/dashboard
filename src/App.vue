@@ -1,48 +1,49 @@
 <template>
-  <div class="app">
-    <!-- Sidebar -->
-    <Sidebar />
-
-    <!-- Main Content -->
-    <div class="main-content">
-      <!-- Topbar -->
-      <Topbar />
-
-      <!-- Dashboard Content -->
-      <Dashboard />
+  <div id="app">
+    <div class="d-flex">
+      <Sidebar />
+      <div class="flex-grow-1">
+        <Header />
+        <Dashboard />
+      </div>
     </div>
   </div>
 </template>
 
 <script>
 import Sidebar from './components/Sidebar.vue'
-import Topbar from './components/Topbar.vue'
+import Header from './components/Header.vue'
 import Dashboard from './components/Dashboard.vue'
 
 export default {
   name: 'App',
   components: {
     Sidebar,
-    Topbar,
+    Header,
     Dashboard
   }
 }
 </script>
 
-<style scoped>
-.app {
-  display: flex;
+<style>
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  background-color: #f8f9fa;
+}
+
+#app {
   height: 100vh;
-  overflow: hidden;
-  font-family: 'Segoe UI', sans-serif;
+}
+
+.sidebar {
+  width: 250px;
+  background: white;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
 }
 
 .main-content {
   flex: 1;
-  display: flex;
-  flex-direction: column;
-  background-color: #f7f8fa;
-  padding: 20px;
-  overflow-y: auto;
+  overflow-x: hidden;
 }
 </style>

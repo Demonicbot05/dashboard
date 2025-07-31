@@ -9,11 +9,15 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@fortawesome/fontawesome-free": "^7.0.0",
+    "bootstrap": "^5.3.7",
     "chart.js": "^4.5.0",
+    "recharts": "^3.1.0",
     "vue": "^3.5.17",
     "vue-chartjs": "^5.3.2"
   },
   "devDependencies": {
+    "@tailwindcss/postcss": "^4.1.11",
     "@vitejs/plugin-vue": "^6.0.0",
     "autoprefixer": "^10.4.21",
     "postcss": "^8.5.6",
