@@ -1,6 +1,6 @@
 <template>
   <div class="card h-100 border-0 shadow-sm">
-    <!-- Header -->
+    
     <div class="card-header bg-white border-0 d-flex justify-content-between align-items-center">
       <div>
         <h6 class="fw-bold mb-0">Employee Performance Ratings</h6>
@@ -13,26 +13,26 @@
       </button>
     </div>
 
-    <!-- Body -->
+    
     <div class="card-body">
-      <!-- Score -->
+      
       <div class="d-flex align-items-baseline mb-4">
         <h2 class="fw-bold mb-0 me-2">98%</h2>
       </div>
 
-      <!-- Performance Bars -->
+      
       <div>
         <div
           v-for="employee in employees"
           :key="employee.name"
           class="d-flex align-items-center mb-3"
         >
-          <!-- Name -->
+          
           <div class="me-3" style="min-width: 130px;">
             <small class="fw-medium">{{ employee.name }}</small>
           </div>
 
-          <!-- Horizontal stacked bar -->
+          
           <div class="bar-track flex-grow-1 position-relative">
             <div
               class="bar-segment"
@@ -62,7 +62,7 @@
         </div>
       </div>
 
-      <!-- Legend -->
+      
       <div class="d-flex justify-content-between mt-4 small text-muted flex-wrap">
         <div class="d-flex align-items-center mb-1">
           <span class="legend-dot me-2" style="background-color: #6c5ce7;"></span> Task completed
@@ -75,7 +75,7 @@
         </div>
       </div>
 
-      <!-- Scale -->
+      
       <div class="d-flex justify-content-between mt-3 small text-muted">
         <span v-for="n in 9" :key="n">{{ (n - 1) * 5 }}</span>
       </div>
