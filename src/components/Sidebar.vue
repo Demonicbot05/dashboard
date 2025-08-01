@@ -1,6 +1,6 @@
 <template>
   <div class="sidebar d-flex flex-column p-3">
-    <!-- Logo -->
+    
     <div class="d-flex align-items-center mb-4">
       <div class="bg-primary rounded p-2 me-2">
         <i class="bi bi-person-badge text-white"></i>
@@ -8,7 +8,7 @@
       <h5 class="mb-0 fw-bold">TurHR</h5>
     </div>
 
-    <!-- Navigation -->
+    
     <nav class="flex-grow-1">
       <ul class="nav nav-pills flex-column">
         <li class="nav-item mb-2">
@@ -55,7 +55,7 @@
         </li>
       </ul>
 
-      <!-- Team Management Section -->
+      
       <div class="mt-4">
         <p class="text-muted small mb-3 text-uppercase">Team Management</p>
         <ul class="nav nav-pills flex-column">
@@ -92,7 +92,7 @@
         </ul>
       </div>
 
-      <!-- List Section -->
+      
       <div class="mt-4">
         <p class="text-muted small mb-3 text-uppercase">List</p>
         <ul class="nav nav-pills flex-column">
@@ -118,7 +118,7 @@
       </div>
     </nav>
 
-    <!-- Announcements -->
+    
     <div class="mt-auto">
       <div class="card border-0" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);">
         <div class="card-body text-white">
