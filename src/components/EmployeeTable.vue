@@ -9,7 +9,7 @@
         </button>
       </div>
       
-      <!-- Filters -->
+      
       <div class="d-flex align-items-center gap-3">
         <div class="position-relative">
           <input 
