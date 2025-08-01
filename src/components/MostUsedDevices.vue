@@ -1,6 +1,6 @@
 <template>
   <div class="card h-100 border-0 shadow-sm">
-    <!-- Header -->
+    
     <div class="card-header bg-white border-0 d-flex justify-content-between align-items-center">
       <h6 class="fw-bold mb-0">Today Used Devices</h6>
       <button class="btn btn-sm btn-outline-light text-muted border-0">
@@ -8,9 +8,9 @@
       </button>
     </div>
 
-    <!-- Body -->
+    
     <div class="card-body d-flex align-items-center justify-content-between">
-      <!-- Semi Circle Chart -->
+      
       <div class="position-relative" style="width: 120px; height: 60px;">
         <canvas ref="deviceChart" width="120" height="60"></canvas>
         <div
@@ -22,7 +22,7 @@
         </div>
       </div>
 
-      <!-- Legend -->
+      
       <div class="ms-3">
         <div class="d-flex align-items-center mb-2">
           <span
@@ -67,17 +67,17 @@ export default {
       const centerY = canvas.height
       const radius = 50
 
-      // Clear canvas
+      
       ctx.clearRect(0, 0, canvas.width, canvas.height)
 
       const total = 100
       const data = [
-        { value: 80, color: '#6c5ce7' },   // Purple
-        { value: 13, color: '#fdcb6e' },   // Yellow
-        { value: 7, color: '#e17055' }     // Orange
+        { value: 80, color: '#6c5ce7' },   
+        { value: 13, color: '#fdcb6e' },   
+        { value: 7, color: '#e17055' }     
       ]
 
-      let currentAngle = Math.PI // Start from left (180 deg)
+      let currentAngle = Math.PI 
 
       data.forEach((item) => {
         const percentage = item.value / total
