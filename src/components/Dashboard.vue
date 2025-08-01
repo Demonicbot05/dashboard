@@ -1,6 +1,6 @@
 <template>
   <div class="container-fluid p-4">
-    <!-- Dashboard Header -->
+    
     <div class="d-flex justify-content-between align-items-center mb-4">
       <h2 class="fw-bold mb-0">Good Morning, Turja Sen</h2>
       <div class="d-flex align-items-center gap-3">
@@ -12,7 +12,7 @@
       </div>
     </div>
 
-    <!-- Top Row Cards -->
+    
     <div class="row mb-4">
       <div class="col-md-4">
         <TotalEmployees />
@@ -25,7 +25,7 @@
       </div>
     </div>
 
-    <!-- Middle Row -->
+    
     <div class="row mb-4">
       <div class="col-lg-6">
         <EmployeePerformance />
@@ -35,7 +35,7 @@
       </div>
     </div>
 
-    <!-- Bottom Row - Employee Table -->
+    
     <div class="row">
       <div class="col-12">
         <EmployeeTable />
